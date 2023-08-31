@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ilyos Khurozov</title>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+</head>
+<body>
+<header>
+  <h1>Ilyos Khurozov</h1>
+  <p>Hi, I am a Java developer with <span id="exp"></span>+ years experience. Currently working as a backend developer at Maroqand LLC.</p>
+</header>
+<main>
+  <h2>Skills</h2>
+  <ul type="disc">
+    <li>Java</li>
+    <li>Pascal(Delphi), C++</li>
+    <li>SQL</li>
+    <li>Spring boot</li>
+    <li>Thymeleaf</li>
+    <li>HTML, CSS, Bootsrap</li>
+    <li>JavaScript (JS), jQuery</li>
+    <li>Maven, Gradle</li>
+    <li>Git</li>
+    <li>Docker</li>
+    <li>Linux</li>
+  </ul>
+
+  <h2>Work experience</h2>
+  <ul type="circle">
+    <li>
+      <dt>"MAROQAND" LLC</dt>
+      <dd>
+        Java backend developer
+        <div class="shadow">Feb 2022 - Present</div>
+      </dd>
+    </li>
+    <li>
+      <dt>"Information and Communication Technologies Center SSP-MAROQAND" UE</dt>
+      <dd>
+        Java backend developer
+        <div class="shadow">Aug 2020 - Jan 2022</div>
+      </dd>
+    </li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul type="square">
+    <li>
+      <dt>Tashkent University of Information Technologies</dt>
+      <dd>Telecommunication Technologies
+        <div class="shadow">2018 - 2022</div>
+      </dd>
+    </li>
+    <li>
+      <dt>Academic lyceum of Jizzakh State Pedagogical University</dt>
+      <dd>Exact Scinces
+        <div class="shadow">2015 - 2018</div>
+      </dd>
+    </li>
+  </ul>
+</main>
+<footer>
+  <h2>Contacts</h2>
+  <ul>
+    <li>Email: <a href="mailto:ilyos@khurozov.uz">ilyos@khurozov.uz</a></li>
+    <li>GitHub: <a href="https://github.com/khurozov" target="_blank">khurozov</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/khurozov" target="_blank">khurozov</a></li>
+    <li>Telegram: <a href="https://t.me/khurozov" target="_blank">khurozov</a></li>
+  </ul>
+  <span class="shadow">( no Twitter, no Facebook )</span>
+</footer>
+</body>
+<script>
+  let years = new Date().getFullYear()-2020;
+  if (new Date().getMonth()-7 < 0) --years;
+  document.getElementById('exp').innerHTML = years;
+</script>
+</html>
