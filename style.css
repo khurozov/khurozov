@@ -8,13 +8,13 @@ body {
   background-color: #eee;
   color: #111;
   font-family: monospace;
-  text-align: justify;
-  max-width: 800px;
-  margin: auto
+  max-width: 55rem;
+  margin: auto;
+  padding: 0 2.5rem;
 }
 
 footer {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 h1 {
