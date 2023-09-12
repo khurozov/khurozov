@@ -50,10 +50,29 @@ dd, dd * {
   margin-bottom: .4rem;
 }
 
+details {
+  padding-left: 1.25rem;
+}
+
+details summary {
+  list-style: "[+]";
+}
+
+details[open] summary {
+  list-style: "[-]";
+}
+
 .shadow {
-  font-size: .8rem;
   font-style: italic;
   color: #555;
+}
+
+.shadow, .shadow * {
+  font-size: .8rem;
+}
+
+#fngrprnt {
+  user-select: all;
 }
 
 @media (prefers-color-scheme: dark) {
