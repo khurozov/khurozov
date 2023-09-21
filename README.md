@@ -1,5 +1,7 @@
-Hi there!
+# Ilyos Khurozov
 
-I am Ilyos Khurozov, Java developer.
+Hi, I am a Java developer with 3+ years experience.
 
-Everything is [here](https://khurozov.uz).
+Currently working as a backend developer at Maroqand LLC.
+
+My contacts and more is [here](https://khurozov.uz).
