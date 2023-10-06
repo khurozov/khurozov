@@ -1,0 +1,21 @@
+name: update website using ssh
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup ssh
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/server
+          echo "Host server" > ~/.ssh/config
+          echo "    HostName khurozov.uz" >> ~/.ssh/config
+          echo "    User ${{ secrets.SSH_USER }}" >> ~/.ssh/config
+          echo "    IdentityFile ~/.ssh/server" >> ~/.ssh/config
+          ssh-keyscan -H khurozov.uz >> ~/.ssh/known_hosts
+      - name: run command
+        run: ssh server ./update_khurozov
