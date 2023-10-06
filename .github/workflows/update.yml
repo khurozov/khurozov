@@ -13,10 +13,10 @@ jobs:
           mkdir -p ~/.ssh/
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/server
           chmod 600 ~/.ssh/server
-          echo "Host server" > ~/.ssh/config
-          echo "    HostName khurozov.uz" >> ~/.ssh/config
-          echo "    User ${{ secrets.SSH_USER }}" >> ~/.ssh/config
-          echo "    IdentityFile ~/.ssh/server" >> ~/.ssh/config
+          echo "Host server
+                    HostName khurozov.uz
+                    User ${{ secrets.SSH_USER }}
+                    IdentityFile ~/.ssh/server" > ~/.ssh/config
           ssh-keyscan -H khurozov.uz >> ~/.ssh/known_hosts
       - name: run command
         run: ssh server ./update_khurozov
