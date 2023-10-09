@@ -50,12 +50,12 @@ dd, dd * {
   line-height: 1.25rem;
 }
 
-.note, .note * {
-  font-size: .9rem;
+code {
+  user-select: all;
 }
 
-#fngrprnt {
-  user-select: all;
+.note, .note * {
+  font-size: .9rem;
 }
 
 
@@ -69,6 +69,10 @@ body {
 
 a {
   color: #33f;
+}
+
+code {
+  color: #0a0;
 }
 
 .note {
@@ -86,8 +90,11 @@ a {
     color: #3af;
   }
 
+  code {
+    color: #090;
+  }
+
   .note {
     color: #999;
   }
 }
-
