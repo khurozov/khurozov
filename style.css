@@ -61,40 +61,40 @@ code {
 
 /* colors */
 
-/* light mode*/
+/* dark mode*/
 body {
-  background-color: #eee;
-  color: #111;
+  background-color: #111;
+  color: #eee;
 }
 
 a {
-  color: #33f;
+  color: #3af;
 }
 
 code {
-  color: #0a0;
+  color: #090;
 }
 
 .note {
-  color: #555;
+  color: #999;
 }
 
-/* dark mode */
-@media (prefers-color-scheme: dark) {
+/* light mode */
+@media (prefers-color-scheme: light) {
   body {
-    background-color: #181818;
-    color: #eee;
+    background-color: #eee;
+    color: #111;
   }
 
   a {
-    color: #3af;
+    color: #33f;
   }
 
   code {
-    color: #090;
+    color: #0a0;
   }
 
   .note {
-    color: #999;
+    color: #555;
   }
 }
