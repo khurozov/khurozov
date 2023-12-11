@@ -20,4 +20,4 @@ jobs:
                     IdentityFile ~/.ssh/server" > ~/.ssh/config
           ssh-keyscan -H -p ${{ secrets.SSH_PORT }} khurozov.uz >> ~/.ssh/known_hosts
       - name: run command
-        run: ssh server ./update_khurozov
+        run: ssh server ./update_site
