@@ -18,6 +18,6 @@ jobs:
                     User ${{ secrets.SSH_USER }}
                     Port ${{ secrets.SSH_PORT }}
                     IdentityFile ~/.ssh/server" > ~/.ssh/config
-          ssh-keyscan -H khurozov.uz >> ~/.ssh/known_hosts
+          ssh-keyscan -H -p ${{ secrets.SSH_PORT }} khurozov.uz >> ~/.ssh/known_hosts
       - name: run command
         run: ssh server ./update_khurozov
