@@ -5,6 +5,8 @@
 }
 
 body {
+  background-color: #111;
+  color: #eee;
   font-family: monospace;
   max-width: 55rem;
   margin: auto;
@@ -33,6 +35,7 @@ ul {
 }
 
 a {
+  color: #3af;
   text-decoration: none;
 }
 
@@ -51,50 +54,15 @@ dd, dd * {
 }
 
 code {
-  user-select: all;
-}
-
-.note, .note * {
-  font-size: .9rem;
-}
-
-
-/* colors */
-
-/* dark mode*/
-body {
-  background-color: #111;
-  color: #eee;
-}
-
-a {
-  color: #3af;
-}
-
-code {
   color: #090;
+  user-select: all;
 }
 
 .note {
   color: #999;
+  font-size: .9rem;
 }
 
-/* light mode */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #eee;
-    color: #111;
-  }
-
-  a {
-    color: #33f;
-  }
-
-  code {
-    color: #0a0;
-  }
-
-  .note {
-    color: #555;
-  }
+.note * {
+  font-size: .9rem;
 }
