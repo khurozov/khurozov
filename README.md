@@ -2,4 +2,5 @@
 
 Java developer, Arch linux user. Currently working at Maroqand LLC
 
-My contacts and more is at [khurozov.uz](https://khurozov.uz).
+https://khurozov.uz
+<a rel="me" href="https://foojay.social/@khurozov">@khurozov@foojay.social</a>
