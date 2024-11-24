@@ -66,11 +66,3 @@ code {
 .note * {
   font-size: .9rem;
 }
-
-.hoverable > .hoverable-tooltip {
-  display: none;
-}
-
-.hoverable:hover > .hoverable-tooltip {
-  display: inline;
-}
